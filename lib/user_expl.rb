@@ -5,6 +5,7 @@ class User
 	attr_accessor :email
 	attr_reader :birthdate
 	@@user_count = 0
+	
 
 	def initialize(email_to_save)
 		if check_email(email_to_save)
