@@ -20,4 +20,13 @@ class User
 		return @@user_count
 	end
 
+	def self.find_by_email(user_email)
+		@@all_users.each do |user_e|
+			if user_e.email == user_email
+				puts user_e.age
+				return user_e
+			end
+		end
+	end
+
 end

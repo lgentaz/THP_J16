@@ -54,10 +54,9 @@ class Event
 
 	def to_s
 		puts "Titre : #{self.title}"
-		puts "Date de début : " + self.start_date.strftime("%H:%M:%S %d/%m/%Y")
-		puts "Durée : #{self.duration}"
-		attendees_str = self.attendees.join(", ")
-		puts "Invités : " + attendees_str 
+		puts "Date de début : " + self.start_date.strftime("%d/%m/%Y %H:%M")
+		puts "Durée : #{(self.duration)/60} minutes"
+		puts "Invités : #{self.attendees.join(", ")}"
 	end
 
 end
