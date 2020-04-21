@@ -25,7 +25,7 @@ super_rdv.age_analysis
 super_rdv.to_s
 
  # je crée un WorkEvent
- meeting = WorkEvent.new("2019-01-17 09:00", 70, "réunion de travail", [april, polo])
+ meeting = WorkEvent.new("2019-01-17 09:00", 70, "réunion de travail", [april, polo], "au bureau")
 
 binding.pry
 
